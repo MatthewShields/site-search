@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Search</title>
+		<style>
+			body {
+				margin: 0;
+				color: #999;
+			}
+			.wrapper {
+				width: 300px;
+			}
+			.search-container {
+				background: #ededed;
+				padding: 8px;
+				border: 1px #ccc solid;
+				position: relative;
+			}
+
+			.search {
+				width: 100%;
+				background: white;
+				line-height: 1.5em;
+				display: block;
+				font-size: 1em;
+				padding: 10px 40px 10px 10px;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				border: 1px #ccc solid;
+				outline: 0;
+				color: #999;
+				height: 40px;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			.search-clear {
+				display: block;
+				position: absolute;
+				top: 13px;
+				right: 13px;
+				width: 30px;
+				height: 30px;
+				background: url('search-icon.png') no-repeat center center;
+				text-align: center;
+				color: white;
+				font-weight: bold;
+				line-height: 18px;
+				cursor: pointer;
+			}
+
+			form {
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper" onsubmit="alert('hi');">
+			<form class="search-container">
+				<input type="text" class="search" placeholder="Search this site" id="search-text">
+				<span class="search-clear"></span>
+			</form>
+		</div>
+	</body>
+	<script src="jquery.js"></script>
+	<script src="search.js"></script>
+</html>

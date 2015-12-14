@@ -1,0 +1,26 @@
+{
+    "name":"Site Search Tool",
+    "short_name": "Site Search Tool",
+    "manifest_version":2,
+    "version":"1",
+    "background":{
+        "scripts":["jquery.js", "search.js"]
+    },
+    "browser_action":{
+        "default_icon":"logo.png",
+        "default_popup": "popup.html"
+    },
+    "permissions":[
+        "notifications",
+        "background",
+        "tabs",
+        "webRequest", "webRequestBlocking"
+    ],
+    "web_accessible_resources":[
+        "logo.png"
+    ],
+    "content_scripts": [ {
+        "js": [ "jquery.js" ],
+        "matches": [ "http://*/*", "https://*/*"]
+    }]
+}
